@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Encriptador</title>
+</head>
+<body id="body">
+    <header class="header">
+        <img class="header__img" src="img/Logo.png" alt="Logo Alura Latam">
+        <h1 class="header__titulo">Encriptador de Texto</h1>
+    </header>
+    <main class="bodyPage">
+        <section class="bodyPage__firtSection">
+            <textarea class="firtSection__textarea" id="textoAEncriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="information">
+                <img class="information__img" src="img/Group.png" alt="Icono Informativo">
+                <p class="information__text">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="firtSection__Botones">
+                <button onclick="encriptar();" class="boton firtSection__Boton1">Encriptar</button>
+                <button onclick="desencriptar();" class="boton firtSection__Boton2">Desencriptar</button>
+            </div>
+        </section>
+        <section class="bodyPage__secondSection" id="secondSection">
+            <p class="secondSection_mensajeEncriptado" id="textoEncriptado" style="display: none;"></p>
+            <button onclick="copiar();" class="boton secondSection_Boton" id="copiar" style="display: none;">Copiar</button>
+            <img class="secondSection_img" id="img1" src="img/Muneco.png">
+            <h2 class="secondSection_tituloInformacion" id="tituloInformacion">Ningún mensaje fue encontrado</h2>
+            <p class="secondSection_informacion" id="descripcionInformacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+    </main>
+</body>
+</html>

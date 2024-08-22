@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    /*colores web*/
+    --azulOscuro: #0A3871;
+    --azulFondo: #F3F5FC;
+    --azulBoton: #D8DFE8;
+    --blanco : #FFFFFF;
+    --gris: #495057;
+    --grish2: #343A40;
+
+    /*Fuente web*/
+    --fuentaWeb: "Inter", sans-serif;
+}
+
+*{
+    font-family: var(--fuentaWeb);
+    margin: 0;
+    padding: 0;
+    background-color: var(--azulFondo);
+}
+
+#body{
+    height: 100vh;
+    font-size: 3vh;
+}
+
+.header{
+    padding: 10px 0px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    color: var(--azulOscuro);
+}
+
+.header__img{
+    height: 7vh;
+}
+
+.bodyPage{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    gap: 5.3vh;
+}
+
+.bodyPage__firtSection{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vh;
+}
+
+.firtSection__textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    height: 100%;
+    font-size: 3.5vh;
+    color: var(--azulOscuro);
+}
+
+.firtSection__textarea::placeholder{
+    color: var(--azulOscuro);
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.information__img{
+    height: 2vh;
+}
+
+.information__text{
+    font-size: 2vh;
+}
+
+.firtSection__Botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{
+    width: 45%;
+    height: 9vh;
+    border: 1px solid var(--azulOscuro);
+    border-radius: 3.2vh;
+    background-color: var(--azulBoton);
+    color: var(--azulOscuro);
+    font-size: 2.5vh;
+}
+
+.boton:hover{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.firtSection__Boton1{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+}
+
+.firtSection__Boton1:hover{
+    background-color: var(--azulBoton);
+    color: var(--azulOscuro);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.bodyPage__secondSection{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    border-radius: 4.3vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.secondSection_mensajeEncriptado{
+    width: 80%;
+    margin-top: 20px;
+    background-color: var(--blanco);
+    color: #343A40;
+}
+
+.secondSection_Boton{
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: var(--blanco);
+}
+
+.secondSection_img{
+    width: 80%;
+    background-color: var(--blanco);
+}
+
+.secondSection_tituloInformacion{
+    width: 80%;
+    background-color: var(--blanco);
+    text-align: center;
+    font-size: 3vh;
+}
+
+.secondSection_informacion{
+    width: 80%;
+    background-color: var(--blanco);
+    text-align: center;
+    font-size: 2vh;
+}
+
+@media (max-width: 780px){
+    html{
+        height: 100vh;
+    }
+
+    .bodyPage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bodyPage__firtSection{
+        width: 90%;
+    }
+
+    .firtSection__textarea{
+        height: 50vh;
+    }
+
+    .bodyPage__secondSection{
+        width: 90%;
+        height: auto;
+        align-items: center;
+    }
+
+    .secondSection_img{
+        display: none;
+    }
+
+    .secondSection_tituloInformacion{
+        margin-top: 20px;
+    }
+    
+    .secondSection_informacion{
+        margin-bottom: 20px;
+    }
+
+    .secondSection_Boton{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 540px){
+    .header__titulo{
+        font-size: 3.5vh;
+    }
+}
+
+@media (max-width: 375px){
+    .header__titulo{
+        display: none;
+    }
+
+    .bodyPage{
+        gap: 20px;
+    }
+
+    .firtSection__Botones{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boton{
+        width: 100%;
+    }
+
+    .secondSection_Boton{
+        width: 80%;
+    }
+
+    .secondSection_mensajeEncriptado{
+        word-wrap: break-word;
+    }
+}
